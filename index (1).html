@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samit Singh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f3f4f6, #ffffff);
+      color: #1f2937;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #111827;
+      color: #ffffff;
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      color: #d1d5db;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      color: #93c5fd;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      animation: slideUp 1.5s ease;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    .card {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills span {
+      background: #e5e7eb;
+      padding: 8px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #1f2937;
+      color: white;
+      animation: fadeIn 2s ease;
+    }
+
+    a {
+      color: #2563eb;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(30px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Samit Singh</h1>
+    <p>iOS Developer & Computer Science Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a B.Tech Computer Science student at Galgotias University with a strong foundation in software development, iOS applications, and machine learning. I aim to build intuitive and impactful digital solutions.</p>
+      <a href="samit_Resume__-1.pdf" class="btn" download>Download Resume</a>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Intern - Infosys (June–July 2024)</h3>
+        <ul>
+          <li>Developed a Library Management System using SwiftUI & Firebase</li>
+          <li>Worked with a 10-member team following Agile methodology</li>
+          <li>Focused on frontend integration and UI/UX design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Care-Paws (iOS App)</h3>
+        <p>A Swift-based app for cat care: includes feeding, grooming, health tracking, and vet notifications using ML features.</p>
+      </div>
+      <div class="card">
+        <h3>Library Management System</h3>
+        <p>Built with SwiftUI and Firebase. Managed frontend and worked closely on project planning using Jira.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Java</span><span>C</span><span>Swift UI</span><span>SQL</span><span>HTML/CSS</span>
+        <span>Git</span><span>XCode</span><span>Firebase</span><span>Jira</span><span>DSA</span>
+        <span>Web Development</span>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications & Achievements</h2>
+      <ul>
+        <li>Amazon AWS Certified: AI & ML, Cloud Architecture, Foundations</li>
+        <li>Top 200 in iOS App Pitching</li>
+        <li>Top 100 in iOS Development Program</li>
+        <li>Volunteer - Indian Karting Race (IKR) Season 6</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:samitsingh89.ss@gmail.com">samitsingh89.ss@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/samit-singh-b0618324a/" target="_blank">samit-singh-b0618324a</a></p>
+      <p>GitHub: <a href="https://github.com/samitsingh01" target="_blank">samitsingh01</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Samit Singh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Smooth scroll on nav click
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
